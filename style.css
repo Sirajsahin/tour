@@ -71,7 +71,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2rem 9%;
+  padding:2rem 4%;
 }
 
 header .logo{
@@ -94,28 +94,34 @@ header .navbar a{
 header .navbar a:hover{
   color:var(--orange);
 }
-
+.icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar{
+  margin-left: 2rem;
+}
 header .icons i{
   font-size: 2.5rem;
   color:#fff;
   cursor: pointer;
-  margin-right: 2rem;
+  margin-right:1.5rem;
 }
 
 header .icons i:hover{
   color:var(--orange);
 }
 
-header .search-bar-container{
-  position: absolute;
-  top:100%; left: 0; right:0;
-  padding:1.5rem 2rem;
-  background:#333;
-  border-top: .1rem solid rgba(255,255,255,.2);
-  display: flex;
-  align-items: center;
-  z-index: 1001;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+/* header  */
+.search-btn{
+  width: 57%;
+  padding: 1rem;
+  text-transform: none;
+  color:#333;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  margin-right: 9px;
 }
 
 header .search-bar-container.active{
